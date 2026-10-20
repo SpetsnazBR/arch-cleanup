@@ -14,7 +14,7 @@ Desenvolvido por **SpetsnazBR**.
 | 2 | Limpeza do cache do Pacman mantendo as últimas **2 versões** (`paccache -rk2`) |
 | 3 | Limpeza do cache do Yay (AUR) |
 | 4 | Gerenciamento e remoção segura de pacotes órfãos (`pacman -Rns`) |
-| 5 | Limpeza de logs antigos do Systemd/Journald (retensão de 2 semanas) |
+| 5 | Limpeza de logs antigos do Systemd/Journald (retenção de 2 semanas) |
 | 6 | Limpeza seletiva de temporários: thumbnails, lixeira do usuário e `/var/tmp` |
 | 7 | **Diagnóstico de integridade**: dependências (`pacman -Dk`) e arquivos ausentes (`pacman -Qk`) |
 | 8 | Executar **todas** as rotinas de limpeza e diagnóstico |
@@ -42,7 +42,7 @@ O script **deve** ser executado como root e detecta automaticamente o usuário r
 - ✅ **Remoção seletiva**: `find -delete` a partir de caminhos validados; sem `rm -rf` com *globs* dependentes de variáveis.
 - ✅ **Defesa em profundidade**: `xargs -r` evita execução de comandos com listas vazias.
 - ✅ **Cores TTY-agnostic**: o texto funciona mesmo sem terminal colorido.
-- ⚠️ **`/var/tmp`**: remove apenas **arquivos** sem acesso há mais de 7 dias. Caso possui serviços que persistem dados em `/var/tmp`, revise a lista antes de confirmar.
+- ⚠️ **`/var/tmp`**: remove apenas **arquivos** sem acesso há mais de 7 dias. Caso possua serviços que persistem dados em `/var/tmp`, revise a lista antes de confirmar.
 
 ## 🔧 Verificação de integridade
 
