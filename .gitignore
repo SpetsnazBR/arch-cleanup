@@ -1,0 +1,4 @@
+# Arquivos temporários e sensíveis
+*.tmp
+*.log
+.DS_Store
